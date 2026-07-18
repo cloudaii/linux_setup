@@ -14,6 +14,10 @@ Setting up Linux on Android can be tricky, often leading to annoying display, au
 * **100% Rootless:** Enjoy a full Linux desktop experience without risking your device's security or needing root access.
 
 ---
+## Download Termux
+[Download Termux (F-Droid)](https://f-droid.org/en/packages/com.termux/)
+...
+Download Termux-X11 Nightly (GitHub)](https://github.com/termux/termux-x11/releases/tag/nightly)
 
 ## 🚀 Quick Start
 
