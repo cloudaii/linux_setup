@@ -16,8 +16,8 @@ Setting up Linux on Android can be tricky, often leading to annoying display, au
 ---
 ## Download Termux
 [Download Termux (F-Droid)](https://f-droid.org/en/packages/com.termux/)
-...
-Download Termux-X11 Nightly (GitHub)](https://github.com/termux/termux-x11/releases/tag/nightly)
+
+[Download Termux-X11 Nightly (GitHub)](https://github.com/termux/termux-x11/releases/tag/nightly)
 
 ## 🚀 Quick Start
 
