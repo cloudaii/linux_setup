@@ -1,7 +1,5 @@
 # linux_setup
 
-# Udroid Ubuntu Installer & Fixer for Android
-
 Run a full Ubuntu Desktop environment (XFCE or GNOME) directly on your Android device using Termux and Udroid. 
 
 Setting up Linux on Android can be tricky, often leading to annoying display, audio, or permission errors. This repository simplifies the entire process, providing automated scripts to handle the heavy lifting alongside comprehensive manual setup instructions.
@@ -23,18 +21,40 @@ Get your environment up and running by executing the automated scripts included 
 
 **run this command**
 ```
-pkg update && pkg upgrade -y && pkg install x11-repo -y && . <(curl -Ls https://bit.ly/udroid-installer) && udroid install jammy:xfce4
+pkg update && pkg upgrade -y
 
 ```
-**run to launch GUI**
+**install udroid**
 ```
-termux-x11 :1 -ac & sleep 2 && udroid login jammy:xfce4 --exec "export DISPLAY=:1 && startxfce4"
+. <(curl -Ls https://bit.ly/udroid-installer)
+```
+**run this**
+```
+udroid install jammy:xfce4
+```
+**install x11**
+```
+pkg install x11-repo -y
+```
+```
+pkg install termux-x11-nightly -y
+```
+**start display**
+```
+termux-x11 :1  -ac &
+```
+**login udroid**
+```
+udroid login jammy:xfce4
+```
+**start display GUI**
+```
+export DISPLAY=:1
+```
+```
+startxfce4 &
 ```
 
-**create shortcut**
-```
-echo "alias start-desktop='termux-x11 :1 -ac & sleep 2 && udroid login jammy:xfce4 --exec \"export DISPLAY=:1 && startxfce4\"'" >> ~/.bashrc && source ~/.bashrc
 
-```
 
 
